@@ -1,0 +1,25 @@
+{
+    "images": [
+        {
+            "url": "images/DogGrooming1.jpg",
+            "title": "Dog",
+            "description": "This is an example of a Dog grooming."
+        },
+        {
+            "url": "images/CreativeGrooming.jpg",
+            "title": "Creative",
+            "description": "This is an example of the creative grooming option."
+        },
+        {
+            "url": "images/CatGrooming.jpg",
+            "title": "Cat",
+            "description": "This is an example of a Cat grooming."
+        },
+        {
+            "url": "images/FullGrooming.jpg",
+            "title": "Full",
+            "description": "This is an example of the full grooming option."
+        }
+       
+    ]
+}
