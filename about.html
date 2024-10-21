@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Our Team - Tropical Paws Grooming</title>
+  <title>About Us - Tropical Paws Grooming</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style2.css">
-
   <style>
     body {
       padding-top: 20px;
@@ -15,64 +13,56 @@
       flex-direction: column;
       min-height: 100vh;
       font-family: 'Roboto', sans-serif;
-      background-color: #ff8c66;
+      background-color: #ff8c66; /* Match the background color */
     }
+
     .navbar {
       margin-bottom: 20px;
-      background-color: #66bfbf;
+      background-color: #66bfbf; /* Tropical teal */
     }
+
     .navbar-brand {
       font-family: 'Pacifico', cursive;
       color: white;
     }
+
     .nav-link {
       color: white !important;
     }
+
     .hero {
       flex-grow: 1;
-      background-image: url('https://example.com/tropical-background.jpg'); /* Replace with actual tropical image URL */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 50px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
+
     .hero h1 {
       font-family: 'Pacifico', cursive;
       font-size: 4rem;
     }
+
     .hero p {
       font-size: 1.5rem;
       margin-top: 10px;
     }
-    .btn-tropical {
-      background-color: #ad330a;
-      color: white;
-      border-radius: 50px;
-      padding: 10px 20px;
-    }
-    .btn-tropical:hover {
-      background-color: #ad330a;
-      color: white;
-    }
+
     footer {
       background-color: #008080;
     }
-    #team {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    .team-member {
+      margin-bottom: 30px;
     }
-    #team div {
-      max-width: 350px;
-      text-align: center;
-    }
-    #team img {
-      width: 300px;  /* Increased width */
+
+    .team-member img {
+      max-width: 300px; /* Increased width */
       height: 300px; /* Increased height */
+      border-radius: 50%;
       object-fit: cover; /* Ensures the image covers the set dimensions */
-      border-radius: 50%; /* Make images circular */
+    }
+
+    .container {
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -87,10 +77,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="team.html">Team</a>
           </li>
           <li class="nav-item">
@@ -104,32 +94,39 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Meet Our Team</h1>
-      <p class="lead">Dedicated professionals who love your pets as much as you do!</p>
-    </div>
+  <!-- About Us Section -->
+  <header class="hero">
+    <h1 class="display-4">About Us</h1>
+    <p class="lead">We are Kasson Plummer and Diego Cardona, the web developers behind Tropical Paws Grooming. With a passion for building creative and functional websites, we worked together to bring this grooming service online, ensuring a seamless and friendly experience for all visitors.</p>
+    <p>Thank you for visiting Tropical Paws Grooming!</p>
   </header>
 
-  <!-- Team Section -->
-  <div class="container" id="team">
-    <div>
-      <div id="janelys-image" class="team-image"></div>
-      <h3>Janelys Hernandez</h3>
-      <p>Grooming Specialist</p>
+  <div class="container">
+    <div class="row">
+      <!-- Kasson Plummer -->
+      <div class="col-md-6 team-member text-center">
+        <h3>Kasson Plummer</h3>
+        <p>Web Developer</p>
+        <img src="images/kasson_profile_pic.png" alt="Kasson Plummer"> <!-- Update with correct image path -->
+        <p>
+          Hi, my name is Kasson Plummer and I am a Junior in Software Engineering. I am currently attending Iowa State University and I along with help of my partner created this website for Tropical Paws Grooming. We hope it has been a convenient way to learn about the company!
+        </p>
+        <p>SE/ComS319 Construction of User Interfaces, Fall 2024.</p>
+        <p>10/17/2024. Kasson Plummer, kassonpl@iastate.edu.</p>
+      </div>
+
+      <!-- Diego Cardona -->
+      <div class="col-md-6 team-member text-center">
+        <h3>Diego Cardona</h3>
+        <p>Web Developer</p>
+        <img src="images/diego_profile_pic.png" alt="Diego Cardona"> <!-- Update with correct image path -->
+        <p>
+          Hi, my name is Diego Cardona and I am also a Junior in Software Engineering. Together with Kasson, we created this site to provide a seamless grooming experience for you and your pet.
+        </p>
+        <p>SE/ComS319 Construction of User Interfaces, Fall 2024.</p>
+        <p>10/17/2024. Diego Cardona, dcard04@iastate.edu.</p>
+      </div>
     </div>
-    <div>
-      <div id="kasson-image" class="team-image"></div>
-      <h3>Kasson Plummer</h3>
-      <p>Web Developer</p>
-    </div>
-    <div>
-      <div id="diego-image" class="team-image"></div>
-      <h3>Diego Cardona</h3>
-      <p>Web Developer</p>
-    </div>
-    <!-- Add more team members as needed -->
   </div>
 
   <!-- Footer -->
@@ -139,7 +136,5 @@
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="index.js"></script>
-
 </body>
 </html>
